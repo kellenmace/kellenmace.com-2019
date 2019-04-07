@@ -1,0 +1,34 @@
+html, body {
+    background: #292829;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+
+p,
+li,
+small,
+footer
+{
+    color: rgba(255, 255, 255, 0.88)
+}
+
+a {
+    color: #e5127d;
+}
+
+blockquote {
+    border-left: 0.32813rem solid hsla(0,100%,100%,0.9);
+}
+
+hr {
+    background: hsla(0,100%,100%,0.2);
+}
+
+code {
+    background: rgba(255,255,255,0.1);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+}
