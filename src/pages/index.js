@@ -20,12 +20,8 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={[`blog`, `kellen mace`]}
-        />
-        <Bio />
+      <Layout location={this.props.location} siteTitle={siteTitle} title={`Blog`}>
+        <SEO title="Blog" keywords={[`blog`, `kellen mace`]} />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

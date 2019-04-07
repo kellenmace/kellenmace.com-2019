@@ -5,6 +5,7 @@ module.exports = {
     description: `Personal blog of Kellen Mace`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
+      github: `kellenmace`,
       twitter: `kellenmace`,
     },
   },
