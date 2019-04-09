@@ -1,8 +1,8 @@
 import React from "react"
 import styled, { createGlobalStyle, ThemeProvider } from  "styled-components"
+import styledNormalize from "styled-normalize"
 
-import "./layout.css"
-import { rhythm, scale } from "../utils/typography"
+// import { rhythm, scale } from "../utils/typography"
 import Header from "./header"
 
 export const theme = {
@@ -10,6 +10,7 @@ export const theme = {
 }
 
 const GlobalStyle = createGlobalStyle`
+  ${styledNormalize}
   body {
     background: #efefef;
   }
@@ -28,14 +29,7 @@ const Layout = props => {
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyle />
-          <div
-            style={{
-              marginLeft: `auto`,
-              marginRight: `auto`,
-              maxWidth: rhythm(24),
-              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-            }}
-          >
+          <div>
             <Header siteTitle={siteTitle} title={title} date={date} headerImage={headerImage} />
             <main>{children}</main>
             <footer>
