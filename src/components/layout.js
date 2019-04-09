@@ -1,11 +1,22 @@
 import React from "react"
+import styled, { createGlobalStyle, ThemeProvider } from  "styled-components"
 
 import "./layout.css"
 import { rhythm, scale } from "../utils/typography"
 import Header from "./header"
 
+export const theme = {
+  borderRadius: '10px'
+}
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: #efefef;
+  }
+`
+
 const Layout = props => {
-    const { location, siteTitle, title, date, children } = props
+    const { location, siteTitle, title, date, headerImage, children } = props
 
     // If homepage
     const rootPath = `${__PATH_PREFIX__}/`
@@ -14,20 +25,25 @@ const Layout = props => {
     }
 
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <Header siteTitle={siteTitle} title={title} date={date}/>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} Kellen Mace
-        </footer>
-      </div>
+      <ThemeProvider theme={theme}>
+        <>
+          <GlobalStyle />
+          <div
+            style={{
+              marginLeft: `auto`,
+              marginRight: `auto`,
+              maxWidth: rhythm(24),
+              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            }}
+          >
+            <Header siteTitle={siteTitle} title={title} date={date} headerImage={headerImage} />
+            <main>{children}</main>
+            <footer>
+              © {new Date().getFullYear()} Kellen Mace
+            </footer>
+          </div>
+        </>
+      </ThemeProvider>
     )
 }
 

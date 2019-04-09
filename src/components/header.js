@@ -6,10 +6,10 @@ import github from "../images/github.svg";
 import twitter from "../images/twitter.svg";
 
 const header = props => {
-    const { siteTitle, title, date } = props
+    const { siteTitle, title, date, headerImage } = props
 
     return (
-      <header>
+      <header style={{backgroundImage: headerImage}}>
         <h3>
           <Link to={`/`}>{siteTitle}</Link>
         </h3>

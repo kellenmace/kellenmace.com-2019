@@ -6,48 +6,39 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-// Fonts
-// Lobster
-// Rakkas
-// Simonetta
+const BlogIndex = props => {
+  const { data } = props
+  const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
-
-    return (
-      <Layout location={this.props.location} siteTitle={siteTitle} title={`Blog`}>
-        <SEO title="Blog" keywords={[`blog`, `kellen mace`]} />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              {node.frontmatter.featuredImage &&
-                <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-              }
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
-      </Layout>
-    )
-  }
+  return (
+    <Layout location={props.location} siteTitle={siteTitle} title={`Blog`}>
+      <SEO title="Blog" keywords={[`blog`, `kellen mace`]} />
+      {posts.map(({ node }) => {
+        const title = node.frontmatter.title || node.fields.slug
+        return (
+          <div key={node.fields.slug}>
+            {node.frontmatter.featuredImage &&
+              <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
+            }
+            <h3
+              style={{
+                marginBottom: rhythm(1 / 4),
+              }}
+            >
+              <Link to={node.fields.slug}>{title}</Link>
+            </h3>
+            <small>{node.frontmatter.date}</small>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: node.frontmatter.description || node.excerpt,
+              }}
+            />
+          </div>
+        )
+      })}
+    </Layout>
+  )
 }
 
 export default BlogIndex
