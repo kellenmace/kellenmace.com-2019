@@ -10,11 +10,11 @@ import twitter from "../images/twitter.svg";
 const StyledHeader = styled.header`
   padding-bottom: 24px;
   background: #777;
-  color: rgba(255,255,255,0.8);
+  color: #fff;
   .container {
-    width: 92%;
-    max-width: 1000px;
-    margin: 0 auto;
+    width: ${props => props.theme.contentWidth};
+    max-width: ${props => props.theme.contentMaxWidth};
+    margin: ${props => props.theme.contentMargin};
   }
   .bar {
     display: flex;

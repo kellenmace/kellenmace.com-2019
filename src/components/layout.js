@@ -6,6 +6,10 @@ import styledNormalize from "styled-normalize"
 import Header from "./header"
 
 export const theme = {
+  contentWidth: '92%',
+  contentMaxWidth: '1000px',
+  contentMargin: '0 auto',
+  contentPadding: '80px 0',
   borderRadius: '10px'
 }
 
