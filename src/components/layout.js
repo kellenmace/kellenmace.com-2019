@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { createGlobalStyle, ThemeProvider } from  "styled-components"
+import { createGlobalStyle, ThemeProvider } from  "styled-components"
 import styledNormalize from "styled-normalize"
 
 // import { rhythm, scale } from "../utils/typography"
@@ -15,7 +15,7 @@ export const theme = {
 
 const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
-  body {
+  html, body {
     background: #efefef;
   }
 `
