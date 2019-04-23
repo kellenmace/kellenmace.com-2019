@@ -1,28 +1,22 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import styled from "styled-components"
 
 import Layout from "../components/layout"
+import ContentWrapper from "../components/contentWrapper"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-
-const PostGrid = styled.div`
-  width: ${props => props.theme.contentWidth};
-  max-width: ${props => props.theme.contentMaxWidth};
-  margin: ${props => props.theme.contentMargin};
-  padding: ${props => props.theme.contentPadding};
-`
 
 const BlogIndex = props => {
   const { data } = props
   const siteTitle = data.site.siteMetadata.title
+  const headerImage = data.pageImage.childImageSharp.fluid
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={props.location} siteTitle={siteTitle} title={`Blog`}>
+    <Layout location={props.location} homeNavText={siteTitle} title={`Blog`} headerImage={headerImage}>
       <SEO title="Blog" keywords={[`blog`, `kellen mace`]} />
-      <PostGrid>
+      <ContentWrapper>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -46,7 +40,7 @@ const BlogIndex = props => {
             </div>
           )
         })}
-      </PostGrid>
+      </ContentWrapper>
     </Layout>
   )
 }
@@ -58,6 +52,13 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    pageImage: file(relativePath: { eq: "code-editor.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

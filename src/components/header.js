@@ -3,9 +3,7 @@ import { Link } from "gatsby"
 import styled from  "styled-components"
 import Img from "gatsby-image"
 
-import { rhythm, scale } from "../utils/typography"
-import github from "../images/github.svg";
-import twitter from "../images/twitter.svg";
+import Nav from "../components/nav"
 
 const BackgroundImg = styled(Img)`
   position: absolute !important;
@@ -22,7 +20,6 @@ const BackgroundImg = styled(Img)`
   }
 `
 
-// backgroundImage: headerImage
 const StyledHeader = styled.header`
   padding-bottom: 24px;
   background: rgba(0,0,0,0.6);
@@ -43,6 +40,9 @@ const StyledHeader = styled.header`
     padding-top: 24px;
     padding-bottom: 24px;
     margin-bottom: 96px;
+    @media (max-width: 350px) { /* iPhone 5/SE */
+      flex-direction: column;
+    }
   }
   h3 {
     flex: 1;
@@ -51,52 +51,28 @@ const StyledHeader = styled.header`
     vertical-align: top;
     line-height: 25px;
   }
-  .nav {
-    flex: 1;
-    /* align-self: flex-end; */
-    ul {
-      list-style-type: none;
-      text-align: center;
-      text-align: right;
-      margin-bottom: 0;
-    }
-    li {
-      display: inline-block;
-      margin-bottom: 0;
-      vertical-align: top;
-      a {
-        line-height: 25px;
-      }
-    }
-    li:not(:last-child) {
-      margin-right: 15px;
-    }
-    img {
-      height: 25px;
-      width: auto;
-    }
-  }
   .content {
     h1 {
+      display: block;
       border-top: 4px solid;
       padding-top: 12px;
       /* letter-spacing: -2px; */
     }
     span {
+      display: block;
       text-transform: uppercase;
       margin-top: 5px;
       letter-spacing: 1px;
-      /* line-height: 1.1em; */
       /* font-family: "Source Sans Pro"; */
     }
   }
   @media (min-width: 768px) {
-
+    /* TODO - increase header height */
   }
 `
 
 const header = props => {
-    const { siteTitle, title, date, headerImage } = props
+    const { homeNavText, title, date, headerImage } = props
 
     return (
       <StyledHeader>
@@ -106,41 +82,15 @@ const header = props => {
         <div className="container">
           <div className="bar">
             <h3>
-              <Link to={`/`}>{siteTitle}</Link>
+              <Link to={`/`}>{homeNavText}</Link>
             </h3>
-
-            <div className="nav">
-              <ul>
-                  <li>
-                    <Link to={`/about`}>About</Link>
-                  </li>
-                  <li>
-                    <a href={`https://github.com/kellenmace`}>
-                    <img src={github} alt="GitHub" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href={`https://twitter.com/kellenmace`}>
-                    <img src={twitter} alt="Twitter" />
-                    </a>
-                  </li>
-              </ul>
-            </div>
+            <Nav />
           </div>
 
           <div className="content">
             <h1>{title}</h1>
             { date &&
-              <p
-                style={{
-                  ...scale(-1 / 5),
-                  display: `block`,
-                  marginBottom: rhythm(1),
-                  marginTop: rhythm(-1),
-                }}
-              >
-                {date}
-              </p>
+              <span>{date}</span>
             }
           </div>
         </div>

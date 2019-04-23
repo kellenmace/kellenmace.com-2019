@@ -1,28 +1,20 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import styled from "styled-components"
 
+import ContentWrapper from "../components/contentWrapper"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
-
-const ContentWrapper = styled.div`
-  width: ${props => props.theme.contentWidth};
-  max-width: ${props => props.theme.contentMaxWidth};
-  margin: ${props => props.theme.contentMargin};
-  padding: ${props => props.theme.contentPadding};
-`
+import { rhythm } from "../utils/typography"
 
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark
-  const siteTitle = props.data.site.siteMetadata.title
   const { previous, next } = props.pageContext
 
   return (
     <Layout
       location={props.location}
-      siteTitle={siteTitle}
+      homeNavText={`← Blog`}
       title={post.frontmatter.title}
       date={post.frontmatter.date}
       headerImage={post.frontmatter.featuredImage ? post.frontmatter.featuredImage.childImageSharp.fluid : ``}
@@ -73,12 +65,6 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)

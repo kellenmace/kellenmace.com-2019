@@ -21,20 +21,14 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Layout = props => {
-    const { location, siteTitle, title, date, headerImage, children } = props
-
-    // If homepage
-    const rootPath = `${__PATH_PREFIX__}/`
-    if (location.pathname === rootPath) {
-    } else {
-    }
+    const { homeNavText, title, date, headerImage, children } = props
 
     return (
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyle />
           <div>
-            <Header siteTitle={siteTitle} title={title} date={date} headerImage={headerImage} />
+            <Header homeNavText={homeNavText} title={title} date={date} headerImage={headerImage} />
             <main>{children}</main>
             <footer>
               © {new Date().getFullYear()} Kellen Mace
