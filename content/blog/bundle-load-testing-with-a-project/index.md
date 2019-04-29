@@ -1,6 +1,7 @@
 ---
 title: Bundle Load Testing with a Project
 date: "2015-09-29T15:30:30.121Z"
+featuredImage: "./motorcycle-packages.jpg"
 ---
 
 If you need to be able to run load tests on a project, but don’t want each developer to have to install something like Siege on their own computers in order to run them, you’ve come to the right place. I’ll outline how to bundle load testing functionality with a project. We’ll make use of an open source node.js package: [loadtest](https://www.npmjs.com/package/loadtest). These steps assume you have node.js installed.

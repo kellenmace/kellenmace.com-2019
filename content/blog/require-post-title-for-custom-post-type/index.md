@@ -1,6 +1,7 @@
 ---
 title: Require Post Title for Custom Post Type
 date: "2015-06-23T14:13:30.121Z"
+featuredImage: "../rename-custom-post-type-in-wordpress/street-signs.jpg"
 ---
 
 In this post, I’ll outline how to make the post title field required for a custom post type in WordPress. By default, if a user leaves the title field blank, WordPress will still allow the post to be published or updated. What we want to do is prevent the custom post type from being published/updated until it has a valid title, and let the user know they need to enter one.

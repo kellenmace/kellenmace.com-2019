@@ -1,6 +1,7 @@
 ---
 title: Get the ID of the Main Site in a WordPress Multisite Network
 date: "2016-04-05T17:00:32.121Z"
+featuredImage: "./teal-bokeh-lights.jpg"
 ---
 
 Here’s how you can get the ID of the main site in a WordPress multisite network. This can be useful for switching to that blog using `switch_to_blog( $blog_id )` to gain access to data from that site, then switching back with `restore_current_blog()` for example.

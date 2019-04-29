@@ -1,7 +1,7 @@
 ---
 title: Prepare WordPress Theme for SSL (https)
 date: "2015-04-20T11:30:00.121Z"
-featuredImage: "./key.png"
+featuredImage: "./key.jpg"
 ---
 
 Moving your site to SSL is often a great idea for the obvious security purposes, but also for search engine optimization (SEO), since Google [now gives SSL sites a higher ranking than non-SSL sites](http://searchengineland.com/google-starts-giving-ranking-boost-secure-httpsssl-sites-199446). In this post, I’ll outline a few things to check for in your theme to make sure it’s ready for the move to SSL.

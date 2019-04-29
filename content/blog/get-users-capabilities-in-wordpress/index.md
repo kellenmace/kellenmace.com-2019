@@ -1,7 +1,7 @@
 ---
 title: Get User’s Capabilities in WordPress
 date: "2016-05-05T17:47:30.121Z"
-featuredImage: "./crowd.jpg"
+featuredImage: "../get-current-users-role-in-wordpress/crowd.jpg"
 ---
 
 The function below can be used to get all  of a user’s capabilities:
