@@ -1,6 +1,6 @@
 ---
 title: Set Image Caption via PHP in WordPress
-date: "2016-03-22T014:46:37.121Z"
+date: "2016-03-22T14:46:37.121Z"
 featuredImage: "./supreme.jpg"
 ---
 
