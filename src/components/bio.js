@@ -38,10 +38,11 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Rochester Hills, MI building things on the web.
+              Written by <strong>{author}</strong>, who lives in Rochester Hills, MI and builds cool stuff on the web.
               {` `}
+              <br></br>
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                Follow him on Twitter →
               </a>
             </p>
           </div>

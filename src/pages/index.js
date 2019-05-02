@@ -1,11 +1,10 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import ContentWrapper from "../components/contentWrapper"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import ContentWrapper from "../components/contentWrapper"
+import PostCard from "../components/postCard"
 
 const BlogIndex = props => {
   const { data } = props
@@ -17,29 +16,9 @@ const BlogIndex = props => {
     <Layout location={props.location} homeNavText={siteTitle} title={`Blog`} headerImage={headerImage}>
       <SEO title="Blog" keywords={[`blog`, `kellen mace`]} />
       <ContentWrapper>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              {node.frontmatter.featuredImage &&
-                <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-              }
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
+        {posts.map(({ node }) =>
+          <PostCard node={node} key={node.fields.slug} />
+        )}
       </ContentWrapper>
     </Layout>
   )

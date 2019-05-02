@@ -1,17 +1,28 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import elkGlenTheme from "typography-theme-elk-glen"
 
-Wordpress2016.overrideThemeStyles = () => {
+// Customizations to the Elk Glen theme.
+elkGlenTheme.scaleRatio = 2.55
+elkGlenTheme.googleFonts = [
+  {
+    name: 'Lobster',
+    styles: [
+      '400',
+    ],
+  },
+]
+elkGlenTheme.headerFontFamily = ['Lobster', 'serif']
+elkGlenTheme.bodyFontFamily = ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
+elkGlenTheme.headerWeight = '400'
+elkGlenTheme.overrideThemeStyles = () => {
   return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
+    "a": {
+      textShadow: `none`,
     },
   }
 }
 
-delete Wordpress2016.googleFonts
-
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(elkGlenTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

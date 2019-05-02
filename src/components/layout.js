@@ -1,20 +1,18 @@
 import React from "react"
 import { createGlobalStyle, ThemeProvider } from  "styled-components"
-import styledNormalize from "styled-normalize"
 
 // import { rhythm, scale } from "../utils/typography"
 import Header from "./header"
 
 export const theme = {
   contentWidth: '92%',
-  contentMaxWidth: '1000px',
+  contentMaxWidth: '950px',
   contentMargin: '0 auto',
   contentPadding: '80px 0',
   borderRadius: '10px'
 }
 
 const GlobalStyle = createGlobalStyle`
-  ${styledNormalize}
   html, body {
     background: #efefef;
   }

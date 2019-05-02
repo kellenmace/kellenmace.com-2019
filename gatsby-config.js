@@ -3,7 +3,7 @@ module.exports = {
     title: `Kellen Mace`,
     author: `Kellen Mace`,
     description: `Personal blog of Kellen Mace`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://kellenmace.com/`,
     social: {
       github: `kellenmace`,
       twitter: `kellenmace`,
