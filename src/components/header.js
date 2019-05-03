@@ -32,8 +32,6 @@ const StyledHeader = styled.header`
     margin: ${props => props.theme.contentMargin};
   }
   a, a:hover, a:visited, a:link, a:active {
-    /* text-decoration: none; */
-    /* box-shadow: none; */
     color: ${props => props.theme.white};
   }
   .bar {
@@ -65,7 +63,6 @@ const StyledHeader = styled.header`
       text-transform: uppercase;
       margin-top: 5px;
       letter-spacing: 1px;
-      /* font-family: "Source Sans Pro"; */
     }
   }
   @media (min-width: 768px) {

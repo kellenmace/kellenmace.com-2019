@@ -1,24 +1,54 @@
 import React from "react"
 import { Link, } from "gatsby"
 import Img from "gatsby-image"
+import styled from  "styled-components"
+
+const StyledPostCard = styled.div`
+  flex: 1 1 300px;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  border-radius: ${props => props.theme.borderRadius};
+  background-color: ${props => props.theme.white};
+  margin-bottom: 1rem;
+  overflow: hidden;
+  .content {
+    padding: 1rem;
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    background-image: none;
+  }
+  small {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    margin-bottom: 0;
+  }
+`
 
 const PostCard = ({node}) => (
-  <div key={node.fields.slug}>
+  <StyledPostCard>
     {node.frontmatter.featuredImage &&
       <Link to={node.fields.slug}>
         <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
       </Link>
     }
-    <h3>
-      <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-    </h3>
-    <small>{node.frontmatter.date}</small>
-    <p
-      dangerouslySetInnerHTML={{
-        __html: node.frontmatter.description || node.excerpt,
-      }}
-    />
-  </div>
+    <div className="content">
+      <h3>
+        <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+      </h3>
+      <small>{node.frontmatter.date}</small>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: node.frontmatter.description || node.excerpt,
+        }}
+      />
+    </div>
+  </StyledPostCard>
 )
 
 export default PostCard

@@ -6,6 +6,13 @@ import SEO from "../components/seo"
 import ContentWrapper from "../components/contentWrapper"
 import PostCard from "../components/postCard"
 
+// TODO: Apply thesee styles to the flex container.
+// Maybe pass as props to ContentWrapper, or extehd it.
+// https://www.styled-components.com/docs/basics
+// https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items
+// display: flex;
+// flex-wrap: wrap;
+
 const BlogIndex = props => {
   const { data } = props
   const siteTitle = data.site.siteMetadata.title

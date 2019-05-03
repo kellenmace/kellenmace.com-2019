@@ -9,7 +9,7 @@ export const theme = {
   contentMaxWidth: '950px',
   contentMargin: '0 auto',
   contentPadding: '80px 0',
-  borderRadius: '10px',
+  borderRadius: '4px',
   white: '#fff',
 }
 
