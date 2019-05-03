@@ -32,8 +32,9 @@ const StyledHeader = styled.header`
     margin: ${props => props.theme.contentMargin};
   }
   a, a:hover, a:visited, a:link, a:active {
-    text-decoration: none;
-    box-shadow: none;
+    /* text-decoration: none; */
+    /* box-shadow: none; */
+    color: ${props => props.theme.white};
   }
   .bar {
     display: flex;
@@ -56,6 +57,7 @@ const StyledHeader = styled.header`
       display: block;
       border-top: 4px solid;
       padding-top: 12px;
+      color: ${props => props.theme.white};
       /* letter-spacing: -2px; */
     }
     span {

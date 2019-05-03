@@ -9,7 +9,8 @@ export const theme = {
   contentMaxWidth: '950px',
   contentMargin: '0 auto',
   contentPadding: '80px 0',
-  borderRadius: '10px'
+  borderRadius: '10px',
+  white: '#fff',
 }
 
 const GlobalStyle = createGlobalStyle`

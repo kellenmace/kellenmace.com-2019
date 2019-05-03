@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from  "styled-components"
 
-import github from "../images/github.svg"
-import twitter from "../images/twitter.svg"
+import GitHubIcon from "./gitHubIcon"
+import TwitterIcon from "./twitterIcon"
 
 const StyledNav = styled.div`
   .nav {
@@ -29,9 +29,10 @@ const StyledNav = styled.div`
     li:not(:last-child) {
       margin-right: 15px;
     }
-    img {
+    svg {
       height: 25px;
       width: auto;
+      fill: ${props => props.theme.white};
     }
   }
 `
@@ -47,12 +48,12 @@ const Nav = () => {
           </li>
           <li>
             <a href={`https://github.com/kellenmace`} title={`GitHub`} alt={`GitHub`}>
-              <img src={github} alt="GitHub" />
+              <GitHubIcon />
             </a>
           </li>
           <li>
             <a href={`https://twitter.com/kellenmace`} title={`Twitter`} alt={`Twitter`}>
-              <img src={twitter} alt="Twitter" />
+              <TwitterIcon />
             </a>
           </li>
         </ul>

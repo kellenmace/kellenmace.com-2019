@@ -5,7 +5,9 @@ import Img from "gatsby-image"
 const PostCard = ({node}) => (
   <div key={node.fields.slug}>
     {node.frontmatter.featuredImage &&
-      <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
+      <Link to={node.fields.slug}>
+        <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
+      </Link>
     }
     <h3>
       <Link to={node.fields.slug}>{node.frontmatter.title}</Link>

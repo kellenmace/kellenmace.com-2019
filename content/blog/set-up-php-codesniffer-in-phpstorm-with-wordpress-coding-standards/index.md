@@ -38,7 +38,7 @@ Then make sure the WP standards are accessible in the `~/.composer/wpcs/` direct
 `cd ~/.composer/vendor/bin`
 `phpcs --config-set installed_paths ~/.composer/wpcs`
 
-## 5. Add phpcs to your PATH so you can run it globally
+## 5. Add phpcs to your PATH
 
 Open `~/.bash_profile` (or `~/.zshrc` if you use ZSH).
 Paste in: `PATH=$PATH:~/.composer/vendor/bin`.
