@@ -2,13 +2,11 @@ import Typography from "typography"
 import elkGlenTheme from "typography-theme-elk-glen"
 
 // Customizations to the Elk Glen theme.
-elkGlenTheme.scaleRatio = 2.55
+elkGlenTheme.scaleRatio = 2.85
 elkGlenTheme.googleFonts = [
   {
     name: 'Lobster',
-    styles: [
-      '400',
-    ],
+    styles: ['400'],
   },
 ]
 elkGlenTheme.headerFontFamily = ['Lobster', 'serif']
@@ -18,6 +16,9 @@ elkGlenTheme.overrideThemeStyles = () => {
   return {
     "a": {
       textShadow: `none`,
+    },
+    ".gatsby-resp-image-link": {
+      backgroundImage: `none`,
     },
   }
 }

@@ -17,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     background: #efefef;
   }
+  code {
+    background: rgb(221,221,221,0.7);
+    padding: .1rem .3rem .2rem;
+    border-radius: ${props => props.theme.borderRadius};
+  }
 `
 
 const Layout = props => {

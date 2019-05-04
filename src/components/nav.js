@@ -27,12 +27,13 @@ const StyledNav = styled.div`
       }
     }
     li:not(:last-child) {
-      margin-right: 15px;
+      margin-right: 18px;
     }
     svg {
       height: 25px;
       width: auto;
       fill: ${props => props.theme.white};
+      filter: drop-shadow(0 1px 4px rgba(0, 0, 0, .3));
     }
   }
 `

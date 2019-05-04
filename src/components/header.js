@@ -26,6 +26,7 @@ const StyledHeader = styled.header`
   color: #fff;
   position: relative;
   z-index: 1;
+  text-shadow: 0 1px 4px rgb(0, 0, 0, 0.3);
   .container {
     width: ${props => props.theme.contentWidth};
     max-width: ${props => props.theme.contentMaxWidth};
@@ -33,6 +34,8 @@ const StyledHeader = styled.header`
   }
   a, a:hover, a:visited, a:link, a:active {
     color: ${props => props.theme.white};
+    background-image: none;
+    text-shadow: 0 1px 4px rgb(0, 0, 0, 0.3);
   }
   .bar {
     display: flex;
@@ -56,12 +59,12 @@ const StyledHeader = styled.header`
       border-top: 4px solid;
       padding-top: 12px;
       color: ${props => props.theme.white};
-      /* letter-spacing: -2px; */
     }
     span {
       display: block;
       text-transform: uppercase;
       margin-top: 5px;
+      font-size: 14px;
       letter-spacing: 1px;
     }
   }
