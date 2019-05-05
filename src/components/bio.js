@@ -6,6 +6,7 @@
  */
 
 import React from "react"
+import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
@@ -39,9 +40,8 @@ function Bio() {
             />
             <p>
               Written by <strong>{author}</strong>, who lives in Rochester Hills, MI and builds cool stuff on the web.
-              {` `}
-              <br></br>
-              <a href={`https://twitter.com/${social.twitter}`}>
+              {` `}<Link to={`/about`}>About Kellen</Link> {`//`}
+              {` `}<a href={`https://twitter.com/${social.twitter}`}>
                 Follow him on Twitter →
               </a>
             </p>

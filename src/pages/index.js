@@ -16,13 +16,13 @@ const PostsGridContainer = styled.div`
 `
 
 const BlogIndex = props => {
-  const { data } = props
+  const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
   const headerImage = data.pageImage.childImageSharp.fluid
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={props.location} homeNavText={siteTitle} title={`Blog`} headerImage={headerImage}>
+    <Layout location={location} homeNavText={siteTitle} title={`Blog`} headerImage={headerImage}>
       <SEO title="Blog" keywords={[`blog`, `kellen mace`]} />
       <ContentWrapper>
         <PostsGridContainer>

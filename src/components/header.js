@@ -21,11 +21,12 @@ const BackgroundImg = styled(Img)`
 `
 
 const StyledHeader = styled.header`
-  padding-bottom: 24px;
+padding-top: 24px;
+  padding-bottom: 48px;
   background: rgba(0,0,0,0.6);
-  color: #fff;
   position: relative;
   z-index: 1;
+  color: ${props => props.theme.white};
   text-shadow: 0 1px 4px rgb(0, 0, 0, 0.3);
   .container {
     width: ${props => props.theme.contentWidth};
@@ -39,11 +40,12 @@ const StyledHeader = styled.header`
   }
   .bar {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-bottom: 96px;
+    margin-bottom: 168px;
     @media (max-width: 350px) { /* iPhone 5/SE */
       flex-direction: column;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 240px;
     }
   }
   h3 {
@@ -56,6 +58,7 @@ const StyledHeader = styled.header`
   .content {
     h1 {
       display: block;
+      margin: 0;
       border-top: 4px solid;
       padding-top: 12px;
       color: ${props => props.theme.white};
@@ -67,9 +70,6 @@ const StyledHeader = styled.header`
       font-size: 14px;
       letter-spacing: 1px;
     }
-  }
-  @media (min-width: 768px) {
-    /* TODO - increase header height */
   }
 `
 
