@@ -1,17 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ContentWrapper from "../components/contentWrapper"
 import PostCard from "../components/postCard"
 
-// TODO: Apply thesee styles to the flex container.
-// Maybe pass as props to ContentWrapper, or extehd it.
-// https://www.styled-components.com/docs/basics
-// https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items
-// display: flex;
-// flex-wrap: wrap;
+const PostsGridContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+`
 
 const BlogIndex = props => {
   const { data } = props
@@ -23,9 +25,11 @@ const BlogIndex = props => {
     <Layout location={props.location} homeNavText={siteTitle} title={`Blog`} headerImage={headerImage}>
       <SEO title="Blog" keywords={[`blog`, `kellen mace`]} />
       <ContentWrapper>
-        {posts.map(({ node }) =>
-          <PostCard node={node} key={node.fields.slug} />
-        )}
+        <PostsGridContainer>
+          {posts.map(({ node }) =>
+            <PostCard node={node} key={node.fields.slug} />
+          )}
+        </PostsGridContainer>
       </ContentWrapper>
     </Layout>
   )
