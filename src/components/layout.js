@@ -1,8 +1,8 @@
 import React from "react"
 import { createGlobalStyle, ThemeProvider } from  "styled-components"
 
-// import { rhythm, scale } from "../utils/typography"
 import Header from "./header"
+import Footer from "./footer"
 
 export const theme = {
   contentWidth: '92%',
@@ -34,9 +34,7 @@ const Layout = props => {
           <div>
             <Header homeNavText={homeNavText} title={title} date={date} headerImage={headerImage} />
             <main>{children}</main>
-            <footer>
-              © {new Date().getFullYear()} Kellen Mace
-            </footer>
+            <Footer />
           </div>
         </>
       </ThemeProvider>
