@@ -1,15 +1,18 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import SEO from "../components/seo"
+import Layout from "../components/layout"
 import ContentWrapper from "../components/contentWrapper"
 import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Comments from "../components/comments"
+import CommentForm from "../components/commentForm"
 import { rhythm } from "../utils/typography"
 
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark
   const { previous, next } = props.pageContext
+  const comments = props.data.allCommentsYaml && props.data.allCommentsYaml.edges
 
   return (
     <Layout
@@ -56,6 +59,8 @@ const BlogPostTemplate = props => {
             )}
           </li>
         </ul>
+        <Comments comments={comments} />
+        <CommentForm pathContext={props.pathContext} />
       </ContentWrapper>
     </Layout>
   )
@@ -79,6 +84,17 @@ export const pageQuery = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+      }
+    }
+    allCommentsYaml(filter: { slug: { eq: $slug } }) {
+      edges {
+        node {
+          id
+          name
+          email
+          message
+          date
         }
       }
     }

@@ -24,6 +24,14 @@ module.exports = {
         name: `assets`,
       },
     },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/comments`,
+        name: 'comments',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -66,7 +74,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        // TODO: un-comment to turn on
+        // trackingId: `UA-51029905-1`
       },
     },
     `gatsby-plugin-feed`,
