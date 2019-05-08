@@ -12,7 +12,8 @@ import { rhythm } from "../utils/typography"
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark
   const { previous, next } = props.pageContext
-  const comments = props.data.allCommentsYaml && props.data.allCommentsYaml.edges
+  // const comments = props.data.allCommentsYaml && props.data.allCommentsYaml.edges
+  const comments = []
 
   return (
     <Layout
@@ -59,8 +60,8 @@ const BlogPostTemplate = props => {
             )}
           </li>
         </ul>
-        {comments && comments.length &&
-          <Comments comments={comments} />
+        {comments && comments.length ?
+          <Comments comments={comments} /> : null
         }
         <CommentForm pageContext={props.pageContext} />
       </ContentWrapper>
@@ -89,6 +90,11 @@ export const pageQuery = graphql`
         }
       }
     }
+  }
+`
+
+/*
+
     allCommentsYaml(filter: { slug: { eq: $slug } }) {
       edges {
         node {
@@ -100,5 +106,23 @@ export const pageQuery = graphql`
         }
       }
     }
-  }
-`
+
+*/
+
+
+
+/*
+
+    allSlugYaml(filter: { slug: { eq: $slug } }) {
+      edges {
+        node {
+          id
+          name
+          email
+          message
+          date
+        }
+      }
+    }
+
+*/
