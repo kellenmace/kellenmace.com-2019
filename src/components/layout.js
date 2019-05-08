@@ -22,6 +22,10 @@ const GlobalStyle = createGlobalStyle`
     padding: .1rem .3rem .2rem;
     border-radius: ${props => props.theme.borderRadius};
   }
+  /*
+  TODO: style form fields
+  Example: https://css-tricks.com/making-web-components-for-different-contexts/
+  color to use: rgb(221,221,221,0.7); */
 `
 
 const Layout = props => {

@@ -59,8 +59,10 @@ const BlogPostTemplate = props => {
             )}
           </li>
         </ul>
-        <Comments comments={comments} />
-        <CommentForm pathContext={props.pathContext} />
+        {comments && comments.length &&
+          <Comments comments={comments} />
+        }
+        <CommentForm pageContext={props.pageContext} />
       </ContentWrapper>
     </Layout>
   )
