@@ -7,7 +7,25 @@ const CommentForm = props => {
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = e => e.preventDefault() && setSubmitted(true)
+  const sendCommentToStaticman = () => {
+    const url = `https://dev.staticman.net/v3/entry/github/kellenmace/kellenmace.com/master/comments`
+    const queryString =`options[slug]=${slug}&fields[name]=${name}&fields[email]=${email}&fields[message]=${message}`
+
+    fetch(url, {
+      method: 'post',
+      headers: { "Content-type": "application/x-www-form-urlencoded; charset=UTF-8" },
+      body: queryString
+    })
+      .then(response => response.json())
+      .then(data => console.log(`Staticman request succeeded 🙌🏼😄`, data))
+      .catch(data => console.log(`Staticman request crashed and burned 🔥😬`, data))
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    setSubmitted(true)
+    sendCommentToStaticman()
+  }
 
   if (submitted) {
     return (
@@ -21,11 +39,7 @@ const CommentForm = props => {
   return (
     <>
       <h2>Add a comment</h2>
-      <form
-        method="POST"
-        action="https://dev.staticman.net/v3/entry/github/kellenmace/kellenmace.com/master/comments"
-        onSubmit={handleSubmit}
-      >
+      <form onSubmit={handleSubmit}>
         <input
           name="options[slug]"
           type="hidden"
