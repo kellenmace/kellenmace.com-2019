@@ -2,6 +2,7 @@
 title: Get User’s Capabilities in WordPress
 date: "2016-05-05T17:47:30.121Z"
 featuredImage: "./subway-crowd.jpg"
+headerOpacity: "0.8"
 ---
 
 The function below can be used to get all  of a user’s capabilities:

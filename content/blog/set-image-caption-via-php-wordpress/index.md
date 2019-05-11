@@ -2,6 +2,7 @@
 title: Set Image Caption via PHP in WordPress
 date: "2016-03-22T14:46:37.121Z"
 featuredImage: "./supreme.jpg"
+headerOpacity: "0.5"
 ---
 
 In order to change an image’s caption, you can of course find that image in the WordPress Media Gallery and enter a new value in the `Caption` field, but what if you want to update the captions of 100 images? It’d be much more efficient to write some code to handle that for you.

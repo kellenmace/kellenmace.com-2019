@@ -2,6 +2,7 @@
 title: Separate Trackpad & Mouse Natural Scrolling in Mac OS X
 date: "2014-07-15T19:40:00.121Z"
 featuredImage: "./natural-scrolling.jpg"
+headerOpacity: "0.4"
 ---
 
 When using the trackpad on your computer, Apple’s “natural” scrolling feature is pretty great. The content moves in the same direction as your gestures, just as it does on tablets and smartphones.

@@ -2,6 +2,7 @@
 title: Get File Type by URL for a Remote File in WordPress
 date: "2016-09-08T17:32:49.121Z"
 featuredImage: "./minified-code.jpg"
+headerOpacity: "0.7"
 ---
 
 If you want to get the file mime type for a remote file and you have its URL, the function below can be used.

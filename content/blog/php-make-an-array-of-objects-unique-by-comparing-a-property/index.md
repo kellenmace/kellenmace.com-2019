@@ -2,6 +2,7 @@
 title: "PHP: Make an Array of Objects Unique By Comparing a Property"
 date: "2019-02-02T18:16:17.121Z"
 featuredImage: "./color-copies.jpg"
+headerOpacity: "0.4"
 ---
 
 If you have an indexed array of objects, and you want to remove duplicates by comparing a specific property in each object, a function like the `remove_duplicate_models()` one below can be used.

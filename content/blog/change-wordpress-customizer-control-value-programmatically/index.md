@@ -2,6 +2,7 @@
 title: Change WordPress Customizer Control Value Programmatically
 date: "2015-09-03T17:46:37.121Z"
 featuredImage: "./controller.jpg"
+headerOpacity: "0.8"
 ---
 
 Since the WordPress Customizer is built using the [Underscore.js](http://underscorejs.org/) and [Backbone.js](http://backbonejs.org/) libraries, the values of all the customizer controls are not stored in the DOM, but rather in a discrete model. This means that if you use JavaScript to change the value of a control in the DOM, it will look like it has changed visually, but that value will not be saved. Underscore has two-way data binding, so if you update the value in the model (which is what WILL be saved when the user clicks `Save and Publish`), it will also be updated visually in the DOM.

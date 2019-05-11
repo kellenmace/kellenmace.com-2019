@@ -2,6 +2,7 @@
 title: Disable CMB2 Styles on Front End Forms
 date: "2016-08-17T21:21:08.121Z"
 featuredImage: "./stylish-dude.jpg"
+headerOpacity: "0.6"
 ---
 
 [CMB2](https://github.com/WebDevStudios/CMB2) comes with default styles, but you may want to disable them if you’re outputting forms on the front end so they can be styled to match the rest of the site.

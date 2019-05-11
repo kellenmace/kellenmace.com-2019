@@ -2,6 +2,7 @@
 title: Rename Custom Post Type in WordPress
 date: "2015-08-28T15:00:17.121Z"
 featuredImage: "./street-signs.jpg"
+headerOpacity: "0.4"
 ---
 
 If you simply want to change how a post type is displayed in the WordPress admin, you can simply change its labels, or use a plugin like [this one](https://wordpress.org/plugins/cpt-editor/) to do it for you. If on the other hand you need to rename the post type’s slug for some technical reason, then you can follow the steps below. They assume you’re comfortable editing code and using [WP-CLI](http://wp-cli.org/). Before proceeding, make sure you have a complete backup of your site, including the database, that you can revert back to if you have to.

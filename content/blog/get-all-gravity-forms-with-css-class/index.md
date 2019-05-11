@@ -2,6 +2,7 @@
 title: Get all Gravity Forms with CSS Class
 date: "2019-01-20T18:58:55.121Z"
 featuredImage: "./gravity-forms.png"
+headerOpacity: "0.2"
 ---
 
 The functions below can be used to get a list of all Gravity Forms whose fields have a specific CSS class:

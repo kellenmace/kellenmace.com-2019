@@ -2,6 +2,7 @@
 title: Set up PHP CodeSniffer in PhpStorm with WordPress Coding Standards
 date: "2015-08-11T12:13:17.121Z"
 featuredImage: "./goat.jpg"
+headerOpacity: "0.6"
 ---
 
 The steps below cover how to set up PHP CodeSniffer in PhpStorm with WordPress Coding Standards rulesets. This can be very helpful for identifying violations of the [WP coding standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/) as you write code, so you can fix them on-the-spot. This guide assumes you’re on Mac OS X or Linux, are using Vagrant for local development, have [Composer](https://getcomposer.org/) installed and are comfortable using the command line. A video walkthrough of these steps is also available [here](https://www.youtube.com/watch?v=40RIFFF_K7k).

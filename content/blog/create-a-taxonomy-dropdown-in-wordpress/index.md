@@ -2,6 +2,7 @@
 title: Create a Taxonomy Dropdown in WordPress
 date: "2015-06-25T16:26:00.121Z"
 featuredImage: "./raindrops.jpg"
+headerOpacity: "0.8"
 ---
 
 In this post, I’ll outline how to create a taxonomy dropdown in WordPress that lets the user choose an option, then reloads the page to only show entries that match the taxonomy term they chose. This is extremely useful for filtering a list of results to show only what your visitor is interesting in seeing.

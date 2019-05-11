@@ -2,6 +2,7 @@
 title: WP-CLI search-replace Tables Skipped
 date: "2016-05-24T22:23:46.121Z"
 featuredImage: "./magnifying-glass.jpg"
+headerOpacity: "0.7"
 ---
 
 [WP-CLI](https://wp-cli.org/)‘s `search-replace` command is invaluable for changing all the URLs from a production or staging site to reflect your local development environment, among other things. Today I encountered something I hadn’t before; when running a `search-replace` on a database that I had already imported for local development, WP-CLI updated some of the database tables, but others were skipped, according to its output:

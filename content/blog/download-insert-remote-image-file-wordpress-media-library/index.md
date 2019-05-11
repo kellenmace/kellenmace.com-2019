@@ -2,6 +2,7 @@
 title: Download and Insert a Remote Image File into the WordPress Media Library
 date: "2018-02-21T17:16:09.121Z"
 featuredImage: "./photographs.jpg"
+headerOpacity: "0.6"
 ---
 
 I built the following class that downloads a remote image, moves it into the /uploads/ directory of your site, adds it to WordPress as a new attachment and returns to you the attachment ID. Example usage is shown further down the page.

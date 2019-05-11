@@ -2,6 +2,7 @@
 title: Download a Plugin or Theme from the WordPress Admin Dashboard
 date: "2015-12-02T14:24:55.121Z"
 featuredImage: "./dashboard.jpg"
+headerOpacity: "0.7"
 ---
 
 Typically, if I need to download a plugin or theme that’s running on a remote server, I connect to that server via FTP or SSH and transfer the files to my local machine. However, sometimes I don’t have access to the server for one reason or another, but I DO have the username and password to the WordPress admin dashboard. Below, I’ll outline how I download a plugin or theme from the WordPress admin dashboard using the help of a free plugin.

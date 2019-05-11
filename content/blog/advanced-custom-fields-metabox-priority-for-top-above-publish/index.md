@@ -2,6 +2,7 @@
 title: Advanced Custom Fields Metabox Priority for Top, Above Publish
 date: "2016-05-11T18:19:04.121Z"
 featuredImage: "../advanced-custom-fields-metabox-priority-for-top-above-publish/acf.jpg"
+headerOpacity: "0.5"
 ---
 
 By default, all Advanced Custom Fields metaboxes with a position/context of “side” are given a priority of “core” which means that they’ll be positioned below the WordPress Publish, Categories and Tags metaboxes, and possibly others. The function below can be used to bump up a priority of a metabox to “high” so that it appears at the very top of the side column (in two-column view).

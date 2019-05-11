@@ -2,6 +2,7 @@
 title: Get Uploads Directory Path in WordPress
 date: "2017-04-21T19:49:22.121Z"
 featuredImage: "./code-editor.jpg"
+headerOpacity: "0.7"
 ---
 
 The following function can be used to get the absolute path to the WordPress uploads directory:

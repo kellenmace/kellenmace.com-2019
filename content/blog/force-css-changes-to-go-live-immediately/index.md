@@ -2,6 +2,7 @@
 title: Force CSS & JS Changes to “go live” Immediately
 date: "2015-04-08T07:46:37.121Z"
 featuredImage: "../replace-post-meta-query-with-taxonomy-query/motorcycle-blur.jpg"
+headerOpacity: "0.6"
 ---
 
 To quote Mark Jaquith’s [helpful post](https://markjaquith.wordpress.com/2009/05/04/force-css-changes-to-go-live-immediately/) on this topic:

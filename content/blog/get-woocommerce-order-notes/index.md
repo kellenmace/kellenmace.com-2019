@@ -1,7 +1,8 @@
 ---
 title: Get All WooCommerce Order Notes
 date: "2016-11-17T21:16:02.121Z"
-featuredImage: "./woocommerce-logo.png"
+featuredImage: "./woocommerce-logo.jpg"
+headerOpacity: "0.3"
 ---
 
 I’ve seen posts and documentation online for how to get just the customer notes for an order, but no great ones for how to get all WooCommerce order notes. Here’s my solution for that:

@@ -2,6 +2,7 @@
 title: Replace Post Meta Query with Taxonomy Query
 date: "2015-09-06T17:52:27.121Z"
 featuredImage: "./motorcycle-blur.jpg"
+headerOpacity: "0.6"
 ---
 
 In this post, I’ll cover how to replace a post meta query with a taxonomy query. Why, you ask? WordPress’ postmeta database table is not optimized for queries, so querying for posts based on their post meta like the below is inefficient.

@@ -44,7 +44,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    pageImage: file(relativePath: { eq: "code-editor.jpg" }) {
+    pageImage: file(relativePath: { eq: "sparklers.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid

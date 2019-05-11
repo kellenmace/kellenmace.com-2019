@@ -22,6 +22,7 @@ const BlogPostTemplate = props => {
       title={post.frontmatter.title}
       date={post.frontmatter.date}
       headerImage={post.frontmatter.featuredImage ? post.frontmatter.featuredImage.childImageSharp.fluid : ``}
+      headerOpacity={post.frontmatter.headerOpacity || ``}
     >
       <SEO
         title={post.frontmatter.title}
@@ -88,6 +89,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        headerOpacity
       }
     }
   }

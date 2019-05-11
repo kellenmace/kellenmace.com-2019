@@ -2,6 +2,7 @@
 title: Edit Slug Button Missing in WordPress
 date: "2016-09-12T20:20:41.121Z"
 featuredImage: "./wordpress-wallpaper.png"
+headerOpacity: "0.6"
 ---
 
 If somewhere in the code for a WordPress site there is a filter hooked to `post_link` that’s replacing the URL so that it no longer contains the `%postname%` placeholder, WordPress will assume there’s nothing to edit. It will therefore output the permalink on the post edit screen without the edit button next to it, and the permalink’s slug won’t be editable.

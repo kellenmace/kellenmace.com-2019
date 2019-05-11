@@ -12,6 +12,7 @@ const BackgroundImg = styled(Img)`
   width: 100%;
   z-index: -1;
   height: 100%;
+  opacity: ${props => props.headerOpacity || 1};
 
   /* Adjust image positioning (if image covers area with defined height) */
   & > img {
@@ -21,9 +22,9 @@ const BackgroundImg = styled(Img)`
 `
 
 const StyledHeader = styled.header`
-padding-top: 24px;
+  padding-top: 24px;
   padding-bottom: 48px;
-  background: rgba(0,0,0,0.6);
+  background-color: black;
   position: relative;
   z-index: 1;
   color: ${props => props.theme.white};
@@ -74,12 +75,12 @@ padding-top: 24px;
 `
 
 const header = props => {
-    const { homeNavText, title, date, headerImage } = props
+    const { homeNavText, title, date, headerImage, headerOpacity } = props
 
     return (
       <StyledHeader>
         {headerImage &&
-          <BackgroundImg fluid={headerImage} />
+          <BackgroundImg fluid={headerImage} headerOpacity={headerOpacity} />
         }
         <div className="container">
           <div className="bar">

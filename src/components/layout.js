@@ -47,14 +47,20 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Layout = props => {
-    const { homeNavText, title, date, headerImage, children } = props
+    const { homeNavText, title, date, headerImage, headerOpacity, children } = props
 
     return (
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyle />
           <div>
-            <Header homeNavText={homeNavText} title={title} date={date} headerImage={headerImage} />
+            <Header
+              homeNavText={homeNavText}
+              title={title}
+              date={date}
+              headerImage={headerImage}
+              headerOpacity={headerOpacity}
+            />
             <main>{children}</main>
             <Footer />
           </div>

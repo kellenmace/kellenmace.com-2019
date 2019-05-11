@@ -2,6 +2,7 @@
 title: Get Images from Remote Server by Proxy
 date: "2015-07-17T17:46:37.121Z"
 featuredImage: "./server.jpg"
+headerOpacity: "0.7"
 ---
 
 If you have the files and database you need to work on a WordPress site locally but not the images and other media, how can you get them from the remote server?

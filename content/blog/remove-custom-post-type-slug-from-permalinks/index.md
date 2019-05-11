@@ -1,8 +1,9 @@
 ---
 title: Remove Custom Post Type Slug from Permalinks
 date: "2014-05-28T12:40:32.169Z"
-featuredImage: "./chain-link-fence.jpg"
 description: Remove Custom Post Type Slug from Permalinks in WordPress easily with these two code snippets.
+featuredImage: "./chain-link-fence.jpg"
+headerOpacity: "0.8"
 ---
 
 If you create a custom post type in WordPress, its slug will be added to the permalink (URL) structure by default. This can be desirable for grouping types of posts together, but it can also result in longer, harder-to-remember URLs, not to mention articles that don't rank as highly on Google [according to Yoast](https://yoast.com/articles/wordpress-seo/), who is an authority on WordPress search engine optimization (SEO). In this post, I'll cover how to safety and properly remove the custom post type slug from your permalinks.

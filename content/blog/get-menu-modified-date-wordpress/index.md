@@ -2,6 +2,7 @@
 title: Get Menu Modified Date in WordPress
 date: "2018-02-23T18:23:54.121Z"
 featuredImage: "./apple-watch.jpg"
+headerOpacity: "0.6"
 ---
 
 WordPress doesn’t store a last modified date for navigation menus, so I created the set of functions below for keeping track of when menus were last updated.

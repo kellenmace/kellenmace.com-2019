@@ -2,6 +2,7 @@
 title: Load Template From WordPress Plugin
 date: "2015-12-11T17:07:48.121Z"
 featuredImage: "./rulers.jpg"
+headerOpacity: "0.5"
 ---
 
 You can load a template file from your plugin using the `template_include` filter, with code similar to this:

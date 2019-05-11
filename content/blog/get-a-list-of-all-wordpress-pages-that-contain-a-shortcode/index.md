@@ -2,6 +2,7 @@
 title: Get a list of all WordPress Pages that Contain a Shortcode
 date: "2019-03-04T19:12:01.121Z"
 featuredImage: "./list.jpg"
+headerOpacity: "0.5"
 ---
 
 The function below can be used to get a list of all WordPress pages that contain a shortcode.

@@ -2,6 +2,7 @@
 title: Get Permalink of Page Outside of The Loop
 date: "2015-07-17T16:12:30.121Z"
 featuredImage: "../remove-custom-post-type-slug-from-permalinks/chain-link-fence.jpg"
+headerOpacity: "0.8"
 ---
 
 Let’s say you have some WordPress code that’s looping through all your posts and outputting some of their data to the webpage. How would you get the permalink of the page outside of The Loop (as in, what’s in the browser’s address bar) rather than the post you’re currently looping through?

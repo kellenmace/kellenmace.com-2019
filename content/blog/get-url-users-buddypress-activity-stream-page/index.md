@@ -2,6 +2,7 @@
 title: Get URL to a User’s BuddyPress Activity Stream Page
 date: "2016-07-23T18:12:23.121Z"
 featuredImage: "./stream.jpg"
+headerOpacity: "0.5"
 ---
 
 If the BuddyPress activity stream component is enabled, the `Activity` tab showing the activity stream is typically accessible at the main user domain URL. You can get that URL by calling `bp_loggedin_user_domain()`.

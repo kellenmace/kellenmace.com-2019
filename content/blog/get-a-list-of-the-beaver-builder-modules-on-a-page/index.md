@@ -2,6 +2,7 @@
 title: Get a List of the Beaver Builder Modules on a Page
 date: "2018-09-26T17:26:13.121Z"
 featuredImage: "./beaver-builder.jpg"
+headerOpacity: "0.5"
 ---
 
 I’ve been doing some work lately with the Beaver Builder page builder for WordPress. For one feature, I needed to get a list of all the Beaver Builder modules that exist on a page. I couldn’t find any native functionality in the plugin to get that data though, so I built the class below to serve that purpose.

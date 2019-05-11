@@ -2,6 +2,7 @@
 title: Change featured image title and link text in WordPress
 date: "2016-04-01T17:16:37.121Z"
 featuredImage: "./fotobox.jpg"
+headerOpacity: "0.8"
 ---
 
 ## Update for WordPress 4.3+

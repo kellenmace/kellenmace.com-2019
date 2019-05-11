@@ -2,6 +2,7 @@
 title: Vagrant Not Reachable After Disconnecting from VPN
 date: "2015-07-22T08:52:37.121Z"
 featuredImage: "./skateboard-keyboard.jpg"
+headerOpacity: "0.7"
 ---
 
 If Vagrant is not reachable after disconnecting from a VPN, first run these commands to bring the interface down, then back up:

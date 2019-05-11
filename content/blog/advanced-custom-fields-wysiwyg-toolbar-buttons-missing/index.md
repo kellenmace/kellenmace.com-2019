@@ -2,6 +2,7 @@
 title: Advanced Custom Fields wysiwyg Toolbar Buttons Missing
 date: "2017-06-29T16:16:50.121Z"
 featuredImage: "../advanced-custom-fields-metabox-priority-for-top-above-publish/acf.jpg"
+headerOpacity: "0.5"
 ---
 
 If you notice that a site has Advanced Custom Fields wysiwyg toolbar buttons missing, it is likely because the `Basic` toolbar is being displayed rather than the `Full` toolbar. I was able to fix that issue and get them to show the Full toolbar by implementing the filter below.

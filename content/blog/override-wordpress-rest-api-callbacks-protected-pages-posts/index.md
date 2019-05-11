@@ -2,6 +2,7 @@
 title: Override WordPress REST API Callbacks for Protected Pages or Posts
 date: "2018-07-07T18:40:44.121Z"
 featuredImage: "./wp-rest-api.jpg"
+headerOpacity: "0.8"
 ---
 
 I was recently working on a headless WordPress project. It has a React frontend that uses the WP REST API to communicate with the WP backend. I had some pages that I needed to only be accessible to logged-in users, and was looking for a way to lock down access to those pages. By default, WordPress allows anybody (logged-in and logged-out users alike) to fetch `page` data from REST API requests like these:
