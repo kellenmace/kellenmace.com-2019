@@ -68,7 +68,7 @@ const CommentForm = props => {
           onChange={e => setMessage(e.target.value)}
           required
         />
-        <button type="submit">Post Comment</button>
+        <input type="submit" value="Post Comment" />
       </form>
     </>
   )

@@ -1,7 +1,7 @@
 ---
 title: Get Current User’s Role in WordPress
 date: "2016-01-02T18:13:20.121Z"
-featuredImage: "./crowd.jpg"
+featuredImage: "./crowd-at-concert.jpg"
 ---
 
 There’s no WordPress function to directly get the current user’s role, so I typically include my own function to serve that purpose, similar to the one below

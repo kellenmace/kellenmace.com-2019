@@ -1,6 +1,7 @@
 ---
 title: How to Transfer WordPress.org Plugin Ownership/Committers
 date: "2017-07-26T15:41:20.121Z"
+featuredImage: "./wordpress-wallpaper.png"
 ---
 
 To transfer WordPress.org plugin ownership to someone else:

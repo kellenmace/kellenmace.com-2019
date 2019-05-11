@@ -26,6 +26,24 @@ const GlobalStyle = createGlobalStyle`
   TODO: style form fields
   Example: https://css-tricks.com/making-web-components-for-different-contexts/
   color to use: rgb(221,221,221,0.7); */
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"],
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: ${props => props.theme.borderRadius};
+    /* background-color: rgb(221,221,221,0.7); */
+    background-color: #ccc;
+  }
+  textarea {
+    min-height: 250px;
+  }
+  /* ::placeholder {
+    color: red;
+  } */
 `
 
 const Layout = props => {

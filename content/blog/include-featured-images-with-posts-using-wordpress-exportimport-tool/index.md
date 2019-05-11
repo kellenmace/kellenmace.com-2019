@@ -1,6 +1,7 @@
 ---
 title: Include Featured Images with Posts Using WordPress Export/Import Tool
 date: "2017-02-08T22:32:24.121Z"
+featuredImage: "./post-cards.jpg"
 ---
 
 When you use the basic WordPress XML Export/Import tool to migrate blog posts between two WordPress sites, their featured images will likely not be included, as silly and counterintuitive as that sounds. In [this post by Morten Rand-Hendriksen](https://mor10.com/wordpress-importer-not-importing-attachments-try-exporting-all-statuses/), he offers one possible solution:

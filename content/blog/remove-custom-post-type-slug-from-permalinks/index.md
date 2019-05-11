@@ -1,7 +1,7 @@
 ---
 title: Remove Custom Post Type Slug from Permalinks
 date: "2014-05-28T12:40:32.169Z"
-featuredImage: "../get-permalink-page-outside-the-loop/chain.jpg"
+featuredImage: "./chain-link-fence.jpg"
 description: Remove Custom Post Type Slug from Permalinks in WordPress easily with these two code snippets.
 ---
 

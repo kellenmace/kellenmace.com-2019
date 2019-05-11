@@ -1,7 +1,7 @@
 ---
 title: Remove Line Breaks in WordPress
 date: "2016-06-02T17:13:47.121Z"
-featuredImage: "./fabric-lines.jpg"
+featuredImage: "./vertical-lines.jpg"
 ---
 
 In the WordPress editor, lines that have a line break at the end of them will be turned into an HTML line break tag `<br>` then they are output on the site. This is often desirable, but not always. The functions below show how to remove line breaks in WordPress.

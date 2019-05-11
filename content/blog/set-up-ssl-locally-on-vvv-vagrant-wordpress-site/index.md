@@ -1,7 +1,7 @@
 ---
 title: Set Up SSL Locally on VVV/Vagrant WordPress Site
 date: "2016-01-03T15:40:57.121Z"
-featuredImage: "./key.jpg"
+featuredImage: "./locks.jpg"
 ---
 
 This post covers how to set up a local SSL WordPress site. These instructions assume you’re on a Mac and use Varying Vagrant Vagrants (VVV) for local development.

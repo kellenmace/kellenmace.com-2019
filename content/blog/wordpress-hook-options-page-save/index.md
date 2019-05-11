@@ -1,7 +1,7 @@
 ---
 title: WordPress Hook After Options Page Save
 date: "2016-04-28T15:22:18.121Z"
-featuredImage: "./circuit-board.jpg"
+featuredImage: "./code-editor.jpg"
 ---
 
 If you want to hook into WordPress when an options page is saved and access the values that were entered, you can use `update_option_{$option}`.

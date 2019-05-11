@@ -1,7 +1,7 @@
 ---
 title: Add unfiltered_html Capability to Admins or Editors in WordPress Multisite
 date: "2016-09-13T20:16:57.121Z"
-featuredImage: "../get-current-users-role-in-wordpress/crowd.jpg"
+featuredImage: "./bus.jpg"
 ---
 
 Per [this Trac ticket](https://core.trac.wordpress.org/ticket/23820), WP intentionally disallows adding the ‘unfiltered_html’ capability to any non-Super Admin users on the WordPress multisite network. This is due to potential security vulnerabilities that could result from doing to. As that ticket points out:

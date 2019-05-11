@@ -1,6 +1,7 @@
 ---
 title: Get Page Template for Post in WordPress Admin
 date: "2016-05-05T13:55:49.121Z"
+featuredImage: "./blank-page-paint.jpg"
 ---
 
 You can get the filename of the page template that the post in the WordPress admin is set to using:

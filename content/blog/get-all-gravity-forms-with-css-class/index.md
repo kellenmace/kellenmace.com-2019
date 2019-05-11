@@ -1,6 +1,6 @@
 ---
 title: Get all Gravity Forms with CSS Class
-date: "2019-02-20T18:58:55.121Z"
+date: "2019-01-20T18:58:55.121Z"
 featuredImage: "./gravity-forms.png"
 ---
 
