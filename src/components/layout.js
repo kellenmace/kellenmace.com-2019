@@ -10,6 +10,7 @@ export const theme = {
   contentMargin: '0 auto',
   contentPadding: '80px 0',
   borderRadius: '4px',
+  mainTextColor: 'rgba(0,0,0,0.8)',
   white: '#fff',
 }
 
@@ -22,28 +23,36 @@ const GlobalStyle = createGlobalStyle`
     padding: .1rem .3rem .2rem;
     border-radius: ${props => props.theme.borderRadius};
   }
-  /*
-  TODO: style form fields
-  Example: https://css-tricks.com/making-web-components-for-different-contexts/
-  color to use: rgb(221,221,221,0.7); */
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+  }
   input[type="text"],
   input[type="email"],
   input[type="submit"],
   textarea {
     width: 100%;
+    min-width: 100%
     margin-bottom: 10px;
     padding: 10px;
     border: none;
     border-radius: ${props => props.theme.borderRadius};
-    /* background-color: rgb(221,221,221,0.7); */
-    background-color: #ccc;
+    background-color: rgb(221,221,221,0.7);
+    color: ${props => props.theme.mainTextColor};
   }
   textarea {
     min-height: 250px;
   }
-  /* ::placeholder {
-    color: red;
-  } */
+  input[type="submit"] {
+    color: rgba(0,0,0,0.4);
+    cursor: pointer;
+    &:hover {
+      color: rgba(0,0,0,0.6);
+      background-color: rgb(221,221,221,0.9);
+      &:after {
+        content: "→";
+      }
+    }
+  }
 `
 
 const Layout = props => {
