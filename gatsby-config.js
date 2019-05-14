@@ -74,8 +74,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // TODO: un-comment to turn on
-        // trackingId: `UA-51029905-1`
+        trackingId: `UA-51029905-1`
       },
     },
     `gatsby-plugin-feed`,
@@ -85,8 +84,8 @@ module.exports = {
         name: `Kellen Mace's Blog`,
         short_name: `Kellen Mace`,
         start_url: `/`,
-        background_color: `#3e3136`,
-        theme_color: `#e5127d`,
+        background_color: `#efefef`,
+        theme_color: `#000c`,
         display: `minimal-ui`,
         icon: `content/assets/site-icon.png`,
       },
