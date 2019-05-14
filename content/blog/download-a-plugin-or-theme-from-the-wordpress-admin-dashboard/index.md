@@ -21,3 +21,5 @@ As Linkpak Digital pointed out in the comments, the Advanced Code Editor plugin 
 1. Click the far-right button to download it
 
 ![Advanced Code Editor screenshot](./advanced-code-editor.png)
+
+![comments](./comments.jpg)

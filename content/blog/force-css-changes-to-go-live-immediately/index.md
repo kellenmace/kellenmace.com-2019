@@ -18,3 +18,5 @@ One way to solve this problem is to “version” your CSS file, by enqueueing y
 This tells WordPress to enqueue the stylesheet/js file just as it normally would, but to append `?ver=` to the end of it, followed by a Unix timestamp representing when the file was last modified (see the image below). This ensures that the version of the file enqueued is the most recent, so everyone instantly sees your changes.
 
 ![Versioning Assets](./versioning-assets.png)
+
+![comments](./comments.jpg)

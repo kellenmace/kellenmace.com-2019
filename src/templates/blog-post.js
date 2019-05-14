@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import ContentWrapper from "../components/contentWrapper"
 import Bio from "../components/bio"
 import Comments from "../components/comments"
-import CommentForm from "../components/commentForm"
+// import CommentForm from "../components/commentForm"
 import { rhythm } from "../utils/typography"
 
 const BlogPostTemplate = props => {
@@ -64,7 +64,7 @@ const BlogPostTemplate = props => {
         {comments && comments.length ?
           <Comments comments={comments} /> : null
         }
-        <CommentForm pageContext={props.pageContext} />
+        {/* <CommentForm pageContext={props.pageContext} /> */}
       </ContentWrapper>
     </Layout>
   )

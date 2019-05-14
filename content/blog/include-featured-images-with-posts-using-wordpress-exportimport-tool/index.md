@@ -19,3 +19,5 @@ Recently (on Feb 7, 2017) I tried doing just that though, and the featured image
 Another possible solution would have been to export `All content`, which does include featured images, then manually edit the XML file and delete everything you don’t want included. This is tedious and prone to error though, so I wouldn’t recommend it.
 
 Beyond the things mentioned above, a more robust migration script could be used, but that seems like overkill to do something as simple as migrating Posts from one WordPress site to another.
+
+![comments](./comments.jpg)

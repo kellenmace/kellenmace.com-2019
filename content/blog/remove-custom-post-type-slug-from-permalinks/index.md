@@ -21,3 +21,5 @@ Recently, I began creating a number of sites for a racing company that puts on 5
 `gist:fae42a47342d0ee4fe4a`
 
 That's it! Just change both instances of `race` in these code samples to the slug of your custom post type, and replace `gp_` with whatever function prefix you'd like (your initials would be fine), and you should be all set. Going to `Settings` > `Permalinks` and saving the permalink structure to end in `/%postname%/` may also be necessary.
+
+![comments](./comments.png)
