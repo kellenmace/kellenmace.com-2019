@@ -8,7 +8,7 @@ headerOpacity: "0.8"
 
 If you create a custom post type in WordPress, its slug will be added to the URL structure by default. So if the CPT slug is "my-cpt-slug", the URLs will look like this: `example.com/my-cpt-slug/post-name`. This can be desirable for grouping types of posts together, but it can also result in longer, harder-to-remember URLs, not to mention articles that don't rank as highly on Google [according to Yoast](https://yoast.com/articles/wordpress-seo/), who is an authority on WordPress search engine optimization (SEO). In this post, I'll cover how to safety and properly remove the custom post type slug from your URLs.
 
-Recently, I began creating a number of sites for a racing company that puts on 5K, 10K, marathon, and other distance races and fun runs. For these sites, I created a custom post type called `race`. This resulted in URLs such as `example.com/race/race-title`. As you can see, this is not nearly as clean, easy to remember, or search engine optimized as having URLs like `example.com/race-title` would be. I found a great Remove Slug from Custom Post Type post on the [WordPress.com VIP](http://vip.wordpress.com/) site that I followed and it worked great. It appears that that post has been deleted though, so I'll outline the process below.
+Recently, I began creating a number of sites for a racing company that puts on 5K, 10K, marathon, and other distance races and fun runs. For these sites, I created a custom post type called `race`. This resulted in URLs such as `example.com/race/race-title`. As you can see, this is not nearly as clean, easy to remember, or search engine optimized as having URLs like `example.com/race-title` would be. I found a great Remove Slug from Custom Post Type post on the [WordPress.com VIP](http://vip.wordpress.com/) site that I followed. It appears that that post has been deleted though, so I'll outline the process below.
 
 ## Steps to Remove Slug from Custom Post Type
 
@@ -24,9 +24,9 @@ That's it! The first function tells WordPress to remove the slug from the URLs i
 
 Yes, that will work, but just be careful - if the theme were ever changed, these URL structure changes would be lost! Creating a standalone plugin for that purpose as recommended in the article above is best practice.
 
-> My CPT URLs aren't loading
+> My custom post type URLs aren't loading
 
-You may want to try going to `Settings` > `Permalinks` and saving the permalink structure to end in `/%postname%/`.
+Go to `Settings` > `Permalinks` in the WordPress admin and re-save your settings (even if you haven't changed anything). If the URLs still don't resolve, you may want to try updating the permalink structure to end in `/%postname%/`.
 
 > I have other issues!
 
