@@ -11,13 +11,13 @@ Writing unit tests for a WordPress plugin recently had me wondering:
 
 Meaning, at what point during the WordPress lifecycle are unit tests executed?
 
-I ran some tests and determined that most of the action hooks that run during a typical WordPress page load are also run during unit testing, up to and including the `posts_selection` hook. The `wp` hook that comes after that is never reached.
+I ran some checks and determined that most of the action hooks that run during a typical WordPress page load are also run during unit testing, up to and including the `posts_selection` hook. The `wp` hook that comes after that is never reached.
 
 ## List of Action Hooks that Run
 
-Here is a full breakdown of which action hooks run when PHPUnit unit tests are executed.
+Here is a full breakdown of which action hooks run when PHPUnit unit tests are executed. This list of hooks comes from WP's [Action Reference page](https://codex.wordpress.org/Plugin_API/Action_Reference).
 
-Using the list of action hooks from WP's [Action Reference page](https://codex.wordpress.org/Plugin_API/Action_Reference), the hooks shown with a strikethrough are never run, and those without a strikethrough are run.
+The hooks shown with a strikethrough are never run, and those without a strikethrough are run.
 
 ~~muplugins\_loaded~~  
 registered\_taxonomy  
@@ -54,3 +54,21 @@ So with that knowledge, you can expect that:
 ## What About the Rest?
 
 Unit Tests are meant to be used to test individual units (classes/methods/functions) of your code in isolation. In order to test functionality during the rest of the WordPress lifecycle, you can take a look at setting up end-to-end tests using [Codeception](https://codeception.com/for/wordpress).
+
+## How Did I Determine This?
+
+A few people have asked about how I determined which hooks fire during unit tests. My method for doing so was pretty simple. I threw some constant definitions like this into the main file of a plugin I was unit testing:
+
+```
+add_action( 'plugins_loaded', function() {
+    define( 'PLUGINS_LOADED_RAN', true );
+} );
+```
+
+...then threw some corresponding checks like this into one of my unit test methods:
+
+```
+echo defined('PLUGINS_LOADED_RAN') ? 'plugins_loaded ran' : 'plugins_loaded did NOT run';
+```
+
+Then depending on which of those messages printed to the command line when I ran `phpunit`, I was able to tell whether or not each hook had been run. Give it a try if you like and please let me know if any updates to the list above need to be made. Thanks!
