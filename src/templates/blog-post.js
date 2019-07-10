@@ -37,7 +37,7 @@ const BlogPostTemplate = props => {
           }}
         />
         <Bio />
-        <Ad />
+        {/* <Ad /> */}
 
         <ul
           style={{
