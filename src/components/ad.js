@@ -9,10 +9,6 @@ const Ad = () => (
       marginBottom: rhythm(1.2),
     }}
   >
-    <script
-      async
-      src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    ></script>
     <ins
       className="adsbygoogle"
       style={{ display: "block" }}
