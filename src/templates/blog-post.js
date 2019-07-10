@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import ContentWrapper from "../components/contentWrapper"
 import Bio from "../components/bio"
+import Ad from "../components/ad"
 import Comments from "../components/comments"
 // import CommentForm from "../components/commentForm"
 import { rhythm } from "../utils/typography"
@@ -36,6 +37,7 @@ const BlogPostTemplate = props => {
           }}
         />
         <Bio />
+        <Ad />
 
         <ul
           style={{
