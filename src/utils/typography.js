@@ -6,10 +6,10 @@ elkGlenTheme.scaleRatio = 2.85
 elkGlenTheme.googleFonts = [
   {
     name: 'Lobster',
-    styles: ['400'],
+    styles: ['400&display=fallback'], // Font weight plus the font-display property.
   },
 ]
-elkGlenTheme.headerFontFamily = ['Lobster', 'serif']
+elkGlenTheme.headerFontFamily = ['Lobster', 'sans-serif']
 elkGlenTheme.bodyFontFamily = ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
 elkGlenTheme.headerWeight = '400'
 elkGlenTheme.overrideThemeStyles = () => {
