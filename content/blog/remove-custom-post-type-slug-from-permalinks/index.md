@@ -14,11 +14,11 @@ Recently, I began creating a number of sites for a racing company that puts on 5
 
 1. [Create a plugin](https://codex.wordpress.org/Writing_a_Plugin) for our new code to live in (yes, it could go in your theme's functions.php file, but then it'd be lost if the theme were changed!).
 
-1. Filter the permalink for our custom post type so that all published posts don’t have the slug in their URLs:
-`gist:a79dfde1e5a14d51a8014d880dac52e7`
+1. Filter the permalink for our custom post type so that all published posts don't have the slug in their URLs:
+   `gist:a79dfde1e5a14d51a8014d880dac52e7`
 
-1. At this point, trying to view the link would result in a 404 (Page Not Found) error. That’s because WordPress only knows that Posts and Pages can have URLs like `domain.com/post-name/` or `domain.com/page-name/`. We need to teach it that our custom post type's posts can also have URLs like `domain.com/cpt-post-name/`.
-`gist:fae42a47342d0ee4fe4a`
+1. At this point, trying to view the link would result in a 404 (Page Not Found) error. That's because WordPress only knows that Posts and Pages can have URLs like `domain.com/post-name/` or `domain.com/page-name/`. We need to teach it that our custom post type's posts can also have URLs like `domain.com/cpt-post-name/`.
+   `gist:fae42a47342d0ee4fe4a`
 
 That's it! Just change both instances of `race` in these code samples to the slug of your custom post type, and replace `gp_` with whatever function prefix you'd like (your initials would be fine), and you should be all set. Going to `Settings` > `Permalinks` and saving the permalink structure to end in `/%postname%/` may also be necessary.
 

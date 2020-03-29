@@ -5,7 +5,7 @@ featuredImage: "./electrical-wires.jpg"
 headerOpacity: "0.5"
 ---
 
-The function below can be used for getting the `WP_Term` object for the term thatâ€™s currently being edited on the `term.php` page in the WordPress admin. Just make sure that when you call this, the global `$taxnow` variable has been set. Using WPâ€™s `admin_init` hook, or anything that fires after that point will work.
+The function below can be used for getting the `WP_Term` object for the term that'€™s currently being edited on the `term.php` page in the WordPress admin. Just make sure that when you call this, the global `$taxnow` variable has been set. Using 'Pâ€™s `admin_init` hook, or anything that fires after that point will work.
 
 `gist:3af3bb6a0f60930501c08c06b1defa7d`
 

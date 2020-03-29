@@ -1,5 +1,5 @@
 ---
-title: Get URL to a Userâ€™s BuddyPress Activity Stream Page
+title: Get URL to a User'€™s BuddyPress Activity Stream Page
 date: "2016-07-23T18:12:23.121Z"
 featuredImage: "./stream.jpg"
 headerOpacity: "0.5"

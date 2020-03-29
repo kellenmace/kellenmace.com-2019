@@ -5,7 +5,7 @@ featuredImage: "./magnifying-glass.jpg"
 headerOpacity: "0.7"
 ---
 
-[WP-CLI](https://wp-cli.org/)‘s `search-replace` command is invaluable for changing all the URLs from a production or staging site to reflect your local development environment, among other things. Today I encountered something I hadn’t before; when running a `search-replace` on a database that I had already imported for local development, WP-CLI updated some of the database tables, but others were skipped, according to its output:
+[WP-CLI](https://wp-cli.org/)‘s `search-replace` command is invaluable for changing all the URLs from a production or staging site to reflect your local development environment, among other things. Today I encountered something I hadn't before; when running a `search-replace` on a database that I had already imported for local development, WP-CLI updated some of the database tables, but others were skipped, according to its output:
 
 ```
 $ wp search-replace --url=example.com example.com example.dev 'wp_*_options'
@@ -33,7 +33,7 @@ Most likely, an error occurred when you exported/imported the database and some 
 
 ## Explanation
 
-One of the keys in each database table has to be marked as the primary key, or else WP-CLI will skip over it and output `skipped` as shown above. To see if that’s your problem, use [DESCRIBE](https://db.apache.org/derby/docs/10.3/tools/rtoolsijcomrefdescribe.html) to view the index data for one of the skipped tables, like this:
+One of the keys in each database table has to be marked as the primary key, or else WP-CLI will skip over it and output `skipped` as shown above. To see if that's your problem, use [DESCRIBE](https://db.apache.org/derby/docs/10.3/tools/rtoolsijcomrefdescribe.html) to view the index data for one of the skipped tables, like this:
 
 ```
 $ wp db query 'DESCRIBE wp_17_comments'
@@ -59,7 +59,7 @@ $ wp db query 'DESCRIBE wp_17_comments'
 +----------------------+---------------------+------+-----+---------------------+-------+
 ```
 
-`PRI` should be listed in the `Key` column somewhere, but since it isn’t, WP-CLI doesn’t know which is the primary key and is consequently skipping the table. Since the example above is a WordPress comments table, `comment_ID` should have `PRI` in the Key column. By looking at the table index data above (and thanks to help from [@JPry](https://twitter.com/jpry)), I was able to see that my table was missing much more than just the primary key and that an error had occurred when the database was exported/imported. So to fix the issue, I needed to get another copy of it and try the `search-replace` again.
+`PRI` should be listed in the `Key` column somewhere, but since it isn't, WP-CLI doesn't know which is the primary key and is consequently skipping the table. Since the example above is a WordPress comments table, `comment_ID` should have `PRI` in the Key column. By looking at the table index data above (and thanks to help from [@JPry](https://twitter.com/jpry)), I was able to see that my table was missing much more than just the primary key and that an error had occurred when the database was exported/imported. So to fix the issue, I needed to get another copy of it and try the `search-replace` again.
 
 Another way to view this data is to use a tool like [Sequel Pro](http://www.sequelpro.com/). The image below is what a table SHOULD look like – you can see that the primary key and other data is intact:
 

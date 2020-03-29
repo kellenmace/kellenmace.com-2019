@@ -5,7 +5,7 @@ featuredImage: "./woothemes-testimonials.png"
 headerOpacity: "0.5"
 ---
 
-By default, the WooThemes Testimonials WordPress plugin displays the quote, then the avatar (authorâ€™s image), then the attribution (name, title and url). You can use the following filter to display the avatar before the quote:
+By default, the WooThemes Testimonials WordPress plugin displays the quote, then the avatar (author'€™s image), then the attribution (name, title and url). You can use the following filter to display the avatar before the quote:
 
 `gist:47742af303b4329fadf5`
 

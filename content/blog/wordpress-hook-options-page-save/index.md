@@ -7,7 +7,7 @@ headerOpacity: "0.7"
 
 If you want to hook into WordPress when an options page is saved and access the values that were entered, you can use `update_option_{$option}`.
 
-Letâ€™s say for my options page, I added the setting like this:
+Let'€™s say for my options page, I added the setting like this:
 
 `register_setting( km_my_cool_options, km_my_cool_options );`
 

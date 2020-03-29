@@ -6,7 +6,7 @@ featuredImage: "./wordpress-wallpaper.png"
 
 To transfer WordPress.org plugin ownership to someone else:
 
-1. Update the pluginâ€™s `readme.txt` file, changing the `Author`, `Author URI` and `Contributors` in the plugin header and commit those changes to the SVN repository.
-1. Log in to [wordpress.org](https://wordpress.org/) and navigate to your pluginâ€™s page. Click the `Advanced View` link in the right sidebar. From here, add and remove any committers in the right sidebar. If youâ€™re going to remove yourself, just be sure to do that last since after you do, youâ€™ll be unable to make any further changes.
+1. Update the plugin'€™s `readme.txt` file, changing the `Author`, `Author URI` and `Contributors` in the plugin header and commit those changes to the SVN repository.
+1. Log in to [wordpress.org](https://wordpress.org/) and navigate to your plugin'€™s page. Click the `Advanced View` link in the right sidebar. From here, add and remove any committers in the right sidebar. If y'uâ€™re going to remove yourself, just be sure to do that last since after you do,'youâ€™ll be unable to make any further changes.
 
 Done!

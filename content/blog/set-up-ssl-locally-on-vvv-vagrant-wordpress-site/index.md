@@ -5,9 +5,10 @@ featuredImage: "./locks.jpg"
 headerOpacity: "0.5"
 ---
 
-This post covers how to set up a local SSL WordPress site. These instructions assume you’re on a Mac and use Varying Vagrant Vagrants (VVV) for local development.
+This post covers how to set up a local SSL WordPress site. These instructions assume you're on a Mac and use Varying Vagrant Vagrants (VVV) for local development.
 
 ## Initial Steps
+
 `cd` into the directory where all the `.conf` files are for your local sites.
 `cd ~/vagrant-local/config/nginx-config/sites`
 
@@ -16,7 +17,6 @@ Create a new `ssl` directory
 
 `cd` into the new `ssl` directory
 `cd ssl`
-
 
 ## Generate an SSL Key and Certificate
 
@@ -53,9 +53,9 @@ Run this to provision your Vagrant virtual machine and ensure you updated the .c
 
 ## Done!
 
-Now you can convert your WordPress site to SSL, if you haven’t done so already.
+Now you can convert your WordPress site to SSL, if you haven't done so already.
 
-When visiting the site, you will get a warning message similar to “This site’s security certificate is not trusted!”, which is is expected. The browser’s telling you that it cannot verify the identity of the server you are trying to connect to because it isn’t signed by a trusted SSL certificate authority. Since we created a self-signed certificate, this makes sense. Just click “Proceed anyway”, “Continue”, or whatever similar option is available and you’ll see the site. Also ignore the “https” in the address bar that is highlighted in red, or with a strikethrough to indicate the untrusted certificate – that’s not a problem.
+When visiting the site, you will get a warning message similar to “This site's security certificate is not trusted!”, which is is expected. The browser's telling you that it cannot verify the identity of the server you are trying to connect to because it isn't signed by a trusted SSL certificate authority. Since we created a self-signed certificate, this makes sense. Just click “Proceed anyway”, “Continue”, or whatever similar option is available and you'll see the site. Also ignore the “https” in the address bar that is highlighted in red, or with a strikethrough to indicate the untrusted certificate – that's not a problem.
 
 ## Resources
 
