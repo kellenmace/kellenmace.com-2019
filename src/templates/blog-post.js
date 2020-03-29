@@ -5,16 +5,11 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import ContentWrapper from "../components/contentWrapper"
 import Bio from "../components/bio"
-import Ad from "../components/ad"
-import Comments from "../components/comments"
-// import CommentForm from "../components/commentForm"
 import { rhythm } from "../utils/typography"
 
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark
   const { previous, next } = props.pageContext
-  // const comments = props.data.allCommentsYaml && props.data.allCommentsYaml.edges
-  const comments = []
 
   return (
     <Layout
@@ -22,7 +17,11 @@ const BlogPostTemplate = props => {
       homeNavText={`← Blog`}
       title={post.frontmatter.title}
       date={post.frontmatter.date}
-      headerImage={post.frontmatter.featuredImage ? post.frontmatter.featuredImage.childImageSharp.fluid : ``}
+      headerImage={
+        post.frontmatter.featuredImage
+          ? post.frontmatter.featuredImage.childImageSharp.fluid
+          : ``
+      }
       headerOpacity={post.frontmatter.headerOpacity || ``}
     >
       <SEO
@@ -37,8 +36,6 @@ const BlogPostTemplate = props => {
           }}
         />
         <Bio />
-        {/* <Ad /> */}
-
         <ul
           style={{
             display: `flex`,
@@ -63,10 +60,6 @@ const BlogPostTemplate = props => {
             )}
           </li>
         </ul>
-        {comments && comments.length ?
-          <Comments comments={comments} /> : null
-        }
-        {/* <CommentForm pageContext={props.pageContext} /> */}
       </ContentWrapper>
     </Layout>
   )
@@ -96,37 +89,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-/*
-
-    allCommentsYaml(filter: { slug: { eq: $slug } }) {
-      edges {
-        node {
-          id
-          name
-          email
-          message
-          date
-        }
-      }
-    }
-
-*/
-
-
-
-/*
-
-    allSlugYaml(filter: { slug: { eq: $slug } }) {
-      edges {
-        node {
-          id
-          name
-          email
-          message
-          date
-        }
-      }
-    }
-
-*/

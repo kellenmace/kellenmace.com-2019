@@ -1,17 +1,16 @@
 import React from "react"
-import { createGlobalStyle, ThemeProvider } from  "styled-components"
+import { createGlobalStyle, ThemeProvider } from "styled-components"
 
 import Header from "./header"
-import Footer from "./footer"
 
 export const theme = {
-  contentWidth: '92%',
-  contentMaxWidth: '950px',
-  contentMargin: '0 auto',
-  contentPadding: '80px 0',
-  borderRadius: '4px',
-  mainTextColor: 'rgba(0,0,0,0.8)',
-  white: '#fff',
+  contentWidth: "92%",
+  contentMaxWidth: "950px",
+  contentMargin: "0 auto",
+  contentPadding: "80px 0",
+  borderRadius: "4px",
+  mainTextColor: "rgba(0,0,0,0.8)",
+  white: "#fff",
 }
 
 const GlobalStyle = createGlobalStyle`
@@ -56,26 +55,32 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Layout = props => {
-    const { homeNavText, title, date, headerImage, headerOpacity, children } = props
+  const {
+    homeNavText,
+    title,
+    date,
+    headerImage,
+    headerOpacity,
+    children,
+  } = props
 
-    return (
-      <ThemeProvider theme={theme}>
-        <>
-          <GlobalStyle />
-          <div>
-            <Header
-              homeNavText={homeNavText}
-              title={title}
-              date={date}
-              headerImage={headerImage}
-              headerOpacity={headerOpacity}
-            />
-            <main>{children}</main>
-            <Footer />
-          </div>
-        </>
-      </ThemeProvider>
-    )
+  return (
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyle />
+        <div>
+          <Header
+            homeNavText={homeNavText}
+            title={title}
+            date={date}
+            headerImage={headerImage}
+            headerOpacity={headerOpacity}
+          />
+          <main>{children}</main>
+        </div>
+      </>
+    </ThemeProvider>
+  )
 }
 
 export default Layout
