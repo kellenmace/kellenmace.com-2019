@@ -1,8 +1,8 @@
 ---
 title: Delete Transients with prefix in WordPress
 date: "2020-02-27T06:31:00.121Z"
-featuredImage: ""
-headerOpacity: "0.7"
+featuredImage: "./glasses-on-laptop.jpg"
+headerOpacity: "0.5"
 ---
 
 Often in WordPress development, you need to save transients to the database that have dynamic names, like this:

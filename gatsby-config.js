@@ -28,15 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/comments`,
-        name: 'comments',
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/src/images`,
-        name: 'images',
+        name: "images",
       },
     },
     {
@@ -60,8 +53,8 @@ module.exports = {
             resolve: "gatsby-remark-embed-gist",
             options: {
               username: `kellenmace`,
-              includeDefaultCss: true
-            }
+              includeDefaultCss: true,
+            },
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
@@ -74,7 +67,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-51029905-1`
+        trackingId: `UA-51029905-1`,
       },
     },
     `gatsby-plugin-feed`,
