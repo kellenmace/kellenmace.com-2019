@@ -5,7 +5,7 @@ featuredImage: "./woocommerce-logo.jpg"
 headerOpacity: "0.3"
 ---
 
-I'€™ve seen posts and documentation online for how to get just the customer notes for an order, but no great ones for how to get all WooCommerce order notes. He'eâ€™s my solution for that:
+Iâ€™ve seen posts and documentation online for how to get just the customer notes for an order, but no great ones for how to get all WooCommerce order notes. Hereâ€™s my solution for that:
 
 `gist:730a34b4d29449446d4379b9caadee22`
 

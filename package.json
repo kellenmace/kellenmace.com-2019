@@ -1,11 +1,11 @@
 {
-  "name": "kellen-mace",
+  "name": "gatsby-starter-blog",
   "private": true,
-  "description": "Kellen Mace's blog",
+  "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kellen Mace",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
-    "url": "https://github.com/kellenmace/kellenmace.com/issues"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -42,15 +42,15 @@
   "devDependencies": {
     "prettier": "^1.16.4"
   },
-  "homepage": "https://kellenmace.com/",
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
-    "kellen mace"
+    "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kellenmace/kellenmace.com.git"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
     "build": "gatsby build",

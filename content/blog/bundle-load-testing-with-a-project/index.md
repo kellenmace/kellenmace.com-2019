@@ -5,7 +5,7 @@ featuredImage: "./motorcycle-packages.jpg"
 headerOpacity: "0.6"
 ---
 
-If you need to be able to run load tests on a project, but don'€™t want each developer to have to install something like Siege on their own computers in order to run them, y'uâ€™ve come to the right plac'. Iâ€™ll outline how to bundle load testing functionality with a proje't. Weâ€™ll make use of an open source node.js package: [loadtest](https://www.npmjs.com/package/loadtest). These steps assume you have node.js installed.
+If you need to be able to run load tests on a project, but donâ€™t want each developer to have to install something like Siege on their own computers in order to run them, youâ€™ve come to the right place. Iâ€™ll outline how to bundle load testing functionality with a project. Weâ€™ll make use of an open source node.js package: [loadtest](https://www.npmjs.com/package/loadtest). These steps assume you have node.js installed.
 
 1. Run `npm init` and create a `package.json` file at the root of your project. Run `npm i --save-dev loadtest` and add `loadtest` as a dev dependency.
 
@@ -18,7 +18,7 @@ If you need to be able to run load tests on a project, but don'€™t want each dev
 2. Create a symbolic link in the root of your project so that the loadtest command can be run from there.
 
 `ln -s ./node_modules/loadtest/bin/loadtest.js loadtest`
-
+ 
 Now anybody working on the project just needs to run `npm install`, then they can run load testing commands such as this: `loadtest http://vvv.dev/ -c 100 -t 10`
 
 Full documentation for `loadtest` is here:  

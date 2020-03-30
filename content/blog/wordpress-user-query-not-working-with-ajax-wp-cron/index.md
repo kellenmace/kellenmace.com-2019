@@ -5,7 +5,7 @@ featuredImage: "./crowd-at-concert.jpg"
 headerOpacity: "0.6"
 ---
 
-Recently, I was trying to do a user query on a WordPress site, but found that the query wasn'€™t able to fetch the users I wanted it to. This was because when an AJAX request or a WP-Cron job is being executed, there is no currently logged in user, so any parts of a user query that require elevated permissions/user capabilities c'nâ€™t be run.
+Recently, I was trying to do a user query on a WordPress site, but found that the query wasnâ€™t able to fetch the users I wanted it to. This was because when an AJAX request or a WP-Cron job is being executed, there is no currently logged in user, so any parts of a user query that require elevated permissions/user capabilities canâ€™t be run.
 
 As a workaround, I was able to temporarily switch the current user to one of the super admins on the site, run the user query, then switch the current user back immediately afterward. My code for doing so is below.
 

@@ -5,7 +5,7 @@ featuredImage: "./apple-watch.jpg"
 headerOpacity: "0.6"
 ---
 
-WordPress doesn'€™t store a last modified date for navigation menus, so I created the set of functions below for keeping track of when menus were last updated.
+WordPress doesnâ€™t store a last modified date for navigation menus, so I created the set of functions below for keeping track of when menus were last updated.
 
 Whenever a menu is created or updated, a timestamp will be saved for it. You can then get the date modified timestamp for any menu using `wds_get_menu_modified_timestamp( $menu_id )`.
 

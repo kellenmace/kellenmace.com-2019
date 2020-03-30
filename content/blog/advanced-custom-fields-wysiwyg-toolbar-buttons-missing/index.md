@@ -9,6 +9,6 @@ If you notice that a site has Advanced Custom Fields wysiwyg toolbar buttons mis
 
 `gist:ab93e7edab148bdbcd9bf3ada9525883`
 
-This function removes the Basic toolbar from the array of available toolbars available to ACF wysiwyg fields, so the remaining Full toolbar is used instead. Here'€™s a before and after screenshot illustrating what it does:
+This function removes the Basic toolbar from the array of available toolbars available to ACF wysiwyg fields, so the remaining Full toolbar is used instead. Hereâ€™s a before and after screenshot illustrating what it does:
 
 ![ACF WYSIWYG toolbar](./acf-wysiwyg-toolbar.png)

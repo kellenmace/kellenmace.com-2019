@@ -5,7 +5,7 @@ featuredImage: "./beaver-builder.jpg"
 headerOpacity: "0.5"
 ---
 
-I'€™ve been doing some work lately with the Beaver Builder page builder for WordPress. For one feature, I needed to get a list of all the Beaver Builder modules that exist on a page. I coul'nâ€™t find any native functionality in the plugin to get that data though, so I built the class below to serve that purpose.
+Iâ€™ve been doing some work lately with the Beaver Builder page builder for WordPress. For one feature, I needed to get a list of all the Beaver Builder modules that exist on a page. I couldnâ€™t find any native functionality in the plugin to get that data though, so I built the class below to serve that purpose.
 
 ## Example Usage
 

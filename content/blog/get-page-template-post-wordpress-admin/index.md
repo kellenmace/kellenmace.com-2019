@@ -15,6 +15,6 @@ The function below gets the filename of the page template, then returns `true` i
 
 `gist:3630a454aa6a3a30e4ff80b50a5c0a41`
 
-Here'€™s a more general version of that function that allows you to pass in the filename of a particular page template to check against:
+Hereâ€™s a more general version of that function that allows you to pass in the filename of a particular page template to check against:
 
 `gist:c6ab8aa769d90f7902d3c12562116fd7`

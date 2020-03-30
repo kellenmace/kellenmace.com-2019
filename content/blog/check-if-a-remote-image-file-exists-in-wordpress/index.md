@@ -5,7 +5,7 @@ featuredImage: "../change-featured-image-title-link-text-wordpress/fotobox.jpg"
 headerOpacity: "0.8"
 ---
 
-If you want to check if a remote image file exists on a WordPress site but don'€™t necessarily want to fetch or download that file, this lightweight helper function can be used for that purpose:
+If you want to check if a remote image file exists on a WordPress site but donâ€™t necessarily want to fetch or download that file, this lightweight helper function can be used for that purpose:
 
 `gist:028f0572ba6cbd896e162ca39836832d`
 

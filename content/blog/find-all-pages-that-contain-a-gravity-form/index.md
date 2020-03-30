@@ -5,7 +5,7 @@ featuredImage: "../get-all-gravity-forms-with-css-class/gravity-forms.png"
 headerOpacity: "0.2"
 ---
 
-The class below can be used to locate all the pages that contain a specific Gravity Form. It searches the post content of each page. If the `gravityform` shortcode is found and it has the specific `id` that we'€™re looking for, that page is added to the list.
+The class below can be used to locate all the pages that contain a specific Gravity Form. It searches the post content of each page. If the `gravityform` shortcode is found and it has the specific `id` that weâ€™re looking for, that page is added to the list.
 
 ## Example Usage
 
@@ -17,7 +17,7 @@ The resulting array looks like this:
 
 ![Gravity Forms shortcode locator](./gravity-form-shortcode-locator.jpg)
 
-The array keys are the pages'€™ post IDs and the values are the pag'sâ€™ names. This allows you to quickly tell which pages contain a particular Gravity Form.
+The array keys are the pagesâ€™ post IDs and the values are the pagesâ€™ names. This allows you to quickly tell which pages contain a particular Gravity Form.
 
 ## The Class
 

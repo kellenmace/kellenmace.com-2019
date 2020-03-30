@@ -5,7 +5,7 @@ featuredImage: "./dashboard.jpg"
 headerOpacity: "0.7"
 ---
 
-Typically, if I need to download a plugin or theme that'��s running on a remote server, I connect to that server via FTP or SSH and transfer the files to my local machine. However, sometimes I d'n’t have access to the server for one reason or another, but I DO have the username and password to the WordPress admin dashboard. Belo', I’ll outline how I download a plugin or theme from the WordPress admin dashboard using the help of a free plugin.
+Typically, if I need to download a plugin or theme that’s running on a remote server, I connect to that server via FTP or SSH and transfer the files to my local machine. However, sometimes I don’t have access to the server for one reason or another, but I DO have the username and password to the WordPress admin dashboard. Below, I’ll outline how I download a plugin or theme from the WordPress admin dashboard using the help of a free plugin.
 
 ## Update 4/26/19
 
@@ -13,7 +13,6 @@ As Linkpak Digital pointed out in the comments, the Advanced Code Editor plugin 
 <https://wordpress.org/plugins/download-plugins-dashboard/>
 
 ## Old Steps
-
 1. Log in to the WordPress admin for the site where the plugin/theme you want is installed.
 1. Go to `Plugins` > `Add New`. Search for and install the [Advanced Code Editor]https://wordpress.org/plugins/advanced-code-editor/) plugin.
 1. Go to `Plugins` > `Installed Plugins` and activate it.

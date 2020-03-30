@@ -5,8 +5,8 @@ featuredImage: "./supreme.jpg"
 headerOpacity: "0.5"
 ---
 
-In order to change an image'€™s caption, you can of course find that image in the WordPress Media Gallery and enter a new value in the `Caption` field, but what if you want to update the captions of 100 images? 'tâ€™d be much more efficient to write some code to handle that for you.
+In order to change an imageâ€™s caption, you can of course find that image in the WordPress Media Gallery and enter a new value in the `Caption` field, but what if you want to update the captions of 100 images? Itâ€™d be much more efficient to write some code to handle that for you.
 
-As an example, here'€™s how you would set the captions of a few images to be the same as the image title:
+As an example, hereâ€™s how you would set the captions of a few images to be the same as the image title:
 
 `gist:7ad55c52f6e85591ca1b`

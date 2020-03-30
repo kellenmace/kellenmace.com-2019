@@ -5,13 +5,13 @@ featuredImage: "./bus.jpg"
 headerOpacity: "0.6"
 ---
 
-Per [this Trac ticket](https://core.trac.wordpress.org/ticket/23820), WP intentionally disallows adding the ‘unfiltered_html' capability to any non-Super Admin users on the WordPress multisite network. This is due to potential security vulnerabilities that could result from doing to. As that ticket points out:
+Per [this Trac ticket](https://core.trac.wordpress.org/ticket/23820), WP intentionally disallows adding the ‘unfiltered_html’ capability to any non-Super Admin users on the WordPress multisite network. This is due to potential security vulnerabilities that could result from doing to. As that ticket points out:
 
 > Any user could add Javascript code to steal the login cookies of any visitor who runs a blog on the same site. The rogue user can then impersonate any of those users and wreak havoc.
 
-If you just want those users to be able to insert things like YouTube video iframes, you could instead use WP's built-in [embed shortcode](https://codex.wordpress.org/Embeds) to embed that content instead.
+If you just want those users to be able to insert things like YouTube video iframes, you could instead use WP’s built-in [embed shortcode](https://codex.wordpress.org/Embeds) to embed that content instead.
 
-If that's not enough, and you need to extend the `unfiltered_html` capability to non-Super Admins, the code below can be used to do that. Just be sure that you trust those users 100% – with great power comes great responsibility.
+If that’s not enough, and you need to extend the `unfiltered_html` capability to non-Super Admins, the code below can be used to do that. Just be sure that you trust those users 100% – with great power comes great responsibility.
 
 `gist:9e6a6fbb92ec75940f23d2a6f01c9b59`
 

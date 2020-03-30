@@ -9,7 +9,7 @@ In the WordPress editor, lines that have a line break at the end of them will be
 
 `gist:679716ed6be408a107d352e8458177fc`
 
-You can see that in the first function, I'€™m limiting this to only run on single posts of the `press-releases` post type. Just change that conditional to apply to your use case and change all instances of `km_` to whatever function prefix y'uâ€™d like to use.
+You can see that in the first function, Iâ€™m limiting this to only run on single posts of the `press-releases` post type. Just change that conditional to apply to your use case and change all instances of `km_` to whatever function prefix youâ€™d like to use.
 
 ## Regex
 
