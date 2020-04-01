@@ -23,7 +23,7 @@ In some cases, that works well. In other cases, it's cumbersome and unwieldy. Wo
 
 ## The Delete-Transients-By-Prefix Method
 
-`7d8f3b4c48cef3fd68ebc8606415d7dd`
+`gist:7d8f3b4c48cef3fd68ebc8606415d7dd`
 
 Once that code is in place, you can simply run `delete_transients_with_prefix( 'km_post_count_' )` to delete all transients with that prefix from the database.
 
